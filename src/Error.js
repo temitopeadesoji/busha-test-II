@@ -4,7 +4,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1 className="App-title">Welcome to error with Routing</h1>
+        <h1 className="App-title">404 Error Page</h1>
       </div>
     );
   }
