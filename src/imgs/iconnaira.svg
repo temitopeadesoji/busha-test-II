@@ -1,0 +1,30 @@
+<svg width="40px" height="36px" viewBox="-3 0 30 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>08A5C646-53F5-456B-BF86-680C2DE19DD2</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1___QEbf8uoT" points="0 0 14.9298246 0 14.9298246 14.95 0 14.95"></polygon>
+        <polygon id="path-3___QEbf8uoT" points="0.649122807 0 21.4210526 0 21.4210526 14.3 0.649122807 14.3"></polygon>
+        <polygon id="path-5___QEbf8uoT" points="0 0.65 22.7192982 0.65 22.7192982 18.2 0 18.2"></polygon>
+    </defs>
+    <g id="Page-1___QEbf8uoT" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="temp-landing-copy-2___QEbf8uoT" transform="translate(-94.000000, -41.000000)">
+            <g id="busha-logo___QEbf8uoT" transform="translate(94.000000, 41.000000)">
+                <g id="Group-14___QEbf8uoT" transform="translate(3.245614, 0.650000)">
+                    <mask id="mask-4___QEbf8uoT" fill="white">
+                        <use xlink:href="#path-3___QEbf8uoT"></use>
+                    </mask>
+                    <g id="Clip-13___QEbf8uoT"></g>
+                    <path d="M19.7099357,13.5433442 L18.5255721,14.3 L16.099797,9.92903342 C14.7560714,7.50489832 12.1913971,5.99898687 9.40783264,5.99898687 L0.649122807,5.99898687 L9.22614755,0.526645252 C10.5456898,-0.31511115 12.276969,-0.132576428 13.3900227,0.965098586 L20.3213401,7.80398393 C22.0104534,9.47084661 21.7128123,12.2649845 19.7099357,13.5433442" id="Fill-12___QEbf8uoT" fill="#67C462" mask="url(#mask-4___QEbf8uoT)"></path>
+                </g>
+                <g id="Group-17___QEbf8uoT" transform="translate(0.000000, 7.800000)">
+                    <mask id="mask-6___QEbf8uoT" fill="white">
+                        <use xlink:href="#path-5___QEbf8uoT"></use>
+                    </mask>
+                    <g id="Clip-16___QEbf8uoT"></g>
+                    <path d="M19.2704081,18.2 L9.07189907,18.2 C8.04953215,18.2 7.11982873,17.5939857 6.68964913,16.6486534 L0.196453172,2.39792566 L0.0994940037,2.18319124 C-0.0373534302,1.88143616 -0.026307449,1.5627778 0.0915163506,1.29295116 C0.0994940037,1.27354368 0.108698988,1.25601434 0.118517638,1.23598081 C0.231432113,1.01185567 0.419213793,0.828423644 0.656702389,0.731386223 C0.779435514,0.67942425 0.914441951,0.65 1.05803971,0.65 L12.1801155,0.65 C14.2972619,0.65 16.2468775,1.82446581 17.2686308,3.71513038 L19.7257479,8.25710769 L22.2859609,12.9887775 C23.5519531,15.3308226 21.8926013,18.2 19.2704081,18.2" id="Fill-15___QEbf8uoT" fill="#74DF70" mask="url(#mask-6___QEbf8uoT)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

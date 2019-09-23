@@ -1,0 +1,395 @@
+@font-face {
+  font-family: "charlies";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/HelveticaNeue.eot"); /* IE9 Compat Modes */
+  src: local("Open Sans"), local("OpenSans"),
+    url("./fonts/HelveticaNeue.woff") format("woff"),
+    /* Modern Browsers */ url("./fonts/HelveticaNeue.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+
+html,
+body,
+#root {
+  background: #f7f6f3;
+  font-family: charlies;
+  letter-spacing: 1.2px;
+}
+a,
+a:-webkit-any-link {
+  color: #42526e;
+  outline: none;
+  text-decoration: none;
+}
+a.active {
+  color: #529c4e;
+}
+a.active svg path {
+  fill: #529c4e !important;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+button {
+  border: none;
+}
+
+select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMCA3LjMzbDIuODI5LTIuODMgOS4xNzUgOS4zMzkgOS4xNjctOS4zMzkgMi44MjkgMi44My0xMS45OTYgMTIuMTd6Ii8+PC9zdmc+) !important;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border: 0px;
+  background-size: 10px;
+  letter-spacing: 1.2px;
+}
+select option {
+  background: #ffffff;
+  color: #172b4d;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 14px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 18px 20px;
+  color: #6b778c;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.08px;
+  line-height: 19px;
+  text-align: right;
+}
+td {
+  height: 80px;
+  padding: 0 25px;
+}
+td span {
+  display: block;
+  font-size: 15px;
+}
+.empty.big {
+  height: 300px;
+  text-align: center;
+  vertical-align: top;
+}
+.empty.big span {
+  color: #42526e;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+  line-height: 27px;
+  text-align: center;
+}
+.empty.big .main {
+  margin-top: 70px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.18px;
+  line-height: 27px;
+  text-align: center;
+}
+.big {
+  width: 40%;
+  text-align: left;
+}
+.main {
+  font-weight: 700;
+}
+.main svg {
+  margin-right: 10px;
+}
+.main svg,
+.main span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9fa;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 1px solid #529c4e;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 16px;
+  left: -8px;
+  bottom: -3.5px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 1px solid #529c4e;
+}
+
+input:checked + .slider {
+  background-color: #67c462;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #67c462;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.sideBar {
+  z-index: 99999;
+  display: block;
+  position: fixed;
+  width: 235px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-right: 2px #eaeaea solid;
+  /* padding: 25px 18px; */
+  text-align: left;
+}
+.sideBar .content {
+  padding: 25px 18px;
+}
+.appBody {
+  margin-left: 235px;
+}
+
+.sideHeader .companyLogo {
+  border-radius: 2px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07), 0 2px 5px 0 rgba(60, 66, 87, 0.1);
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  color: #465470;
+  margin-right: 10px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+}
+.sideHeader .companyLogo p {
+  margin: auto;
+  display: inline-block;
+  vertical-align: sub;
+}
+.sideHeader .companyName {
+  width: 140px;
+  color: #172b4d;
+  font-family: charlies;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+}
+.sideMenu {
+  margin-top: 20px;
+  text-align: left;
+  padding: 5px;
+}
+.sideMenu li {
+  color: #42526e;
+  font-weight: 400;
+  line-height: 17px;
+  font-size: 14px;
+  margin: 15px 0;
+}
+.sideMenu li svg {
+  margin-right: 15px;
+}
+.sideMenu li svg path {
+  fill: #42526e;
+}
+
+.sideBar .acceptPayment {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(103, 196, 98, 0.12);
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 0 rgba(15, 15, 15, 0.1),
+    inset 0 0 0 1px rgba(103, 196, 98, 0.3);
+  width: 196px;
+  height: 36px;
+  margin: 0 auto 20px;
+  color: #67c462;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08px;
+  line-height: 17px;
+  vertical-align: middle;
+  text-align: center;
+}
+.sideBar .acceptPayment img {
+  width: 12px;
+  margin-right: 8px;
+  vertical-align: middle;
+  /* height: 5px; */
+}
+.appBody .content {
+  max-width: 1000px;
+  margin: auto;
+}
+.appHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.pageTitle {
+  display: inline-block;
+  color: #172b4d;
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: 0.16px;
+  line-height: 38px;
+  text-align: left;
+  vertical-align: middle;
+}
+.pageTitle h4 {
+  margin: 0;
+  vertical-align: -webkit-baseline-middle;
+  display: inline-block;
+}
+.headerRight {
+  display: inline-block;
+  /* float: right; */
+}
+.appMode {
+  display: inline-block;
+  vertical-align: middle;
+}
+.appMode label {
+  vertical-align: middle;
+}
+.appMode .modeTitle {
+  color: #172b4d;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: left;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+.appNotification {
+  margin: 0 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.appNotification .oval {
+  vertical-align: middle;
+  background-color: #de3618;
+  border-radius: 100%;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05px;
+  line-height: 15px;
+  margin-top: -28px;
+  margin-left: -10px;
+}
+.appUser {
+  display: inline-block;
+  vertical-align: middle;
+}
+.appUser .userPicture {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #d8d8d8;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+}
+.appUser .userPicture span {
+  position: relative;
+  vertical-align: -webkit-baseline-middle;
+}
+.appUser .userName {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+  color: #172b4d;
+  font-size: 14px;
+  font-weight: 400;
+}
+.appContent {
+  margin: 20px 0;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #dfe1e6;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(15, 15, 15, 0.1),
+    0 0 0 1px rgba(15, 15, 15, 0.06);
+}
+.appContent .hover {
+  background-color: #f9f9fa;
+  width: 932px;
+  height: 50px;
+}
+.txnType {
+  background-color: #67c462 !important;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  min-width: 140px;
+  height: auto;
+  color: #ffffff !important;
+  font-family: charlies;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  background-position-y: 11px !important;
+  background-size: 8px !important;
+  background-position-x: 90% !important;
+  padding: 5px 15px;
+}
