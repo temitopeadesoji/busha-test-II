@@ -14,7 +14,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ![text](./src/imgs/Screenshot-1.png)
 
 ![text](./src/imgs/Screenshot-2.png)
-
-![text](./src/imgs/Screenshot-3.png)
-
-![text](./src/imgs/Screenshot-4.png)
